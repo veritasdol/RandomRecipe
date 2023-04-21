@@ -6,3 +6,24 @@
                                 source: "bg.jpg"
                                 size: self.size
                                 pos: self.pos
+
+        RoundedButton:
+                text: "Find Recept!"
+                pos_hint: {'center_x': 0.5, 'y': 0.2}
+                size_hint: (0.8, 0.1)
+                #background_color: (48/255,84/255,150/255,1)
+                #background_normal: ''
+                on_press: print("Goodbye!")
+
+
+<RoundedButton@Button>
+        background_color: (50,0,0,0)
+        background_normal: ''
+        canvas.before:
+                Color:
+                        rgba: (48/255,84/255,150/255,1)
+                RoundedRectangle:
+                        size: self.size
+                        pos: self.pos
+                        radius: [30]
+<Anim>        
