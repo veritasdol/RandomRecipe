@@ -1,0 +1,3 @@
+title=Random Recipe
+author=Serhii Dolhopolov
+orientation=portrait

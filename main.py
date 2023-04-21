@@ -41,7 +41,7 @@ class MainScreen(FloatLayout):
 class RandomRecipeApp(App):
 
     def build(self):
-        # self.icon = 'box.png'
+        self.icon = 'box.png'
         return MainScreen()
 
 
